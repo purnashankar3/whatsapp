@@ -10,6 +10,28 @@
         .heading{
             background-color: #075E54;
         }
+        @media only screen and (max-width: 458px){
+            .profile-pic{
+                    text-align: center;
+
+
+            }
+            .img-change{
+                margin-left: 8%
+            }
+
+        }
+         @media only screen and (min-width: 458px){
+            .profile-pic{
+                    text-align: center;
+
+
+            }
+            .img-change{
+                margin-left: 25%
+            }
+
+        }
       
         
     </style>
@@ -38,9 +60,9 @@
             </table>
         </div>
         <div style="" class="text-center">
-            <img src="purna3.jpg" class="rounded-circle img-responsive profile-pic"  width="275" height="275" align="middle"><br><br>
+            <img src="purna3.jpg" class="rounded-circle img-fluid profile-pic"  width="275" height="275" align="middle"><br><br>
         
-            <label for="image_uploads" class="btn btn-success" style=" margin-left: 25%;">Change Image</label>
+            <label for="image_uploads" class="btn btn-success img-change" style=" margin-left:; ">Change Image</label>
             <input type="file" id="image_uploads" accept=".jpg, .jpeg, .png .gif" style="visibility: hidden;" 
              onchange="readURL(this);">
             
